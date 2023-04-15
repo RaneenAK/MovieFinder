@@ -18,7 +18,7 @@ services:
   mongodb:
     image: mongodb/mongodb-community-server:latest
     #container_name: mongodb-container
-    hostname: 
+    #hostname: 
     ports:
       - 27017:27017
     restart: always
