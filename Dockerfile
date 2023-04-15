@@ -16,7 +16,7 @@ COPY ./static/* /usr/src/app/static/
 #RUN pip install flask pymongo requests Pillow forms
 COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
-RUN pip install flask
+RUN pip install flask requests
 
 EXPOSE 5000
 
