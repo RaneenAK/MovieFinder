@@ -8,7 +8,7 @@ service docker start
 usermod -a -G docker ec2-user
 
 # Clone the latest version of the code from GitHub
-git clone https://github.com/NatalyPeery/PosterFinder_New.git /home/ec2-user/PosterFinder_New
+git clone https://github.com/RaneenAK/PosterFinder.git 
 
 
 # Connect to the MongoDB container and run mongo shell
@@ -17,7 +17,7 @@ docker run --name mongo -d mongodb/mongodb-community-server:latest
 
 
 # Build the Flask application image
-cd /home/ec2-user/PosterFinder_New
+cd /home/ec2-user/PosterFinder
 docker build -t flask-img -f Dockerfile .
 
 
