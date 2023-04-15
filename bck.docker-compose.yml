@@ -2,13 +2,10 @@ version: "3.8"
 
 services:
   flask:
-    build: .
-    #image: flask-img
-    #container_name: flask-container
+    image: flask-img
+    container_name: flask-container
     ports:
       - 5000:5000
-    volumes: 
-      - .:/app
     links:
       - mongodb
     environment:
@@ -17,8 +14,7 @@ services:
 
   mongodb:
     image: mongodb/mongodb-community-server:latest
-    #container_name: mongodb-container
-    hostname: 
+    container_name: mongodb-container
     ports:
       - 27017:27017
     restart: always
