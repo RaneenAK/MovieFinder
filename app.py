@@ -1,6 +1,9 @@
 import base64
-from flask import Flask, render_template, request, url_for, make_response
+from flask import Flask, current_app, render_template, request, url_for, make_response, flash, redirect
 from connect_to_TMDB import find_poster
+from forms import LoginForm, RegistrationForm
+from flask_sqlalchemy import SQLAlchemy
+
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '5791628bb0b13ce0c676dfde280ba245'
