@@ -13,8 +13,7 @@ COPY ./templates/* /usr/src/app/templates/
 COPY ./static/* /usr/src/app/static/
 
 
-RUN pip install fwtforms form 
-RUN pip install flask pymongo requests Pillow
+RUN pip install flask pymongo requests Pillow flask_wtf form
 
 COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
