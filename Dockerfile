@@ -13,7 +13,7 @@ COPY ./templates/* /usr/src/app/templates/
 COPY ./static/* /usr/src/app/static/
 
 
-RUN pip install flask pymongo requests Pillow
+RUN pip install flask pymongo requests Pillow forms
 
 EXPOSE 5000
 
