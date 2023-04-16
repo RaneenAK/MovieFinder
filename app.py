@@ -1,8 +1,8 @@
 import base64
 from flask import Flask, current_app, render_template, request, url_for, make_response, flash, redirect
 from connect_to_TMDB import find_poster
-from forms import LoginForm, RegistrationForm
-from flask_sqlalchemy import SQLAlchemy
+#from forms import LoginForm, RegistrationForm
+#from flask_sqlalchemy import SQLAlchemy
 
 
 app = Flask(__name__)
